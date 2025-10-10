@@ -134,9 +134,178 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-.colored-box {
-    color: black;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
+/* 
+  Container for the entire experience section. 
+  Centers content, limits max width, and adds padding.
+*/
+.experience-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* 
+  Section heading styling.
+  Larger font, bottom border for separation.
+*/
+.experience-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+/* 
+  Timeline container: stacks items vertically with a consistent gap.
+*/
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* vertical space between each card */
+  /* Note: we rely on gap, so no need for margin-bottom on individual items for spacing */
+}
+
+/* 
+  Each timeline item as a “card”.
+  Uses flexbox: logo on the left, text on the right.
+  Adds border, rounded corners, background, padding, and subtle shadow.
+*/
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;              /* light border around card */
+  border-radius: 8px;                  /* rounded corners */
+  background-color: #fff;              /* white background */
+  padding: 1rem;                       /* inner spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* subtle shadow for elevation */
+  /* Optional: add a colored left border for emphasis, e.g.: 
+     border-left: 4px solid #1a73e8;
+  */
+  /* Optional hover effect can be added separately if desired */
+}
+
+/* 
+  Logo container: fixed width, centers the logo image.
+*/
+.logo-container {
+  flex: 0 0 80px;                      /* fixed width for logos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+  Logo image constraints: ensure it fits within the container.
+*/
+.logo-container img {
+  max-width: 100%;
+  max-height: 80px;                   /* keep logos from growing too tall */
+  object-fit: contain;                /* preserve aspect ratio */
+}
+
+/* 
+  Text content area to the right of the logo.
+  margin-left separates from logo; flex:1 allows it to fill remaining space.
+*/
+.content {
+  margin-left: 1rem;
+  flex: 1;
+}
+
+/* 
+  Institution or project name styling.
+  Slightly larger font, bold color.
+*/
+.content .title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #1a2b5c;                      /* primary text color; adjust to match theme */
+}
+
+/* 
+  If the title includes a link, remove default underline and inherit color.
+*/
+.content .title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content .title a:hover {
+  text-decoration: underline;         /* underline on hover for clarity */
+}
+
+/* 
+  Subtitle (e.g., department, school) styling.
+  Italicized and muted color.
+*/
+.content .subtitle {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  font-style: italic;
+  color: #555;
+}
+
+/* 
+  Date range styling.
+  Smaller font and muted color to de-emphasize relative to title and role.
+*/
+.content .date-range {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+  color: #777;
+}
+
+/* 
+  Role or position styling (e.g., Research Intern, Exchange Student).
+  Bold font-weight to stand out.
+*/
+.content .role {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 
+  Additional info: advisor, notes, description.
+  Normal font-size, slightly muted color.
+*/
+.content .advisor,
+.content .note,
+.content .description {
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+  color: #444;
+}
+
+/* 
+  Links inside advisor section (e.g., advisor name) get a theme color.
+*/
+.content .advisor a {
+  color: #0066cc;                     /* link color; adjust to theme */
+  text-decoration: none;
+}
+
+.content .advisor a:hover {
+  text-decoration: underline;
+}
+
+/* 
+  Responsive adjustments: on small screens, stack logo above content and center-align.
+*/
+@media (max-width: 600px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo-container {
+    margin-bottom: 0.5rem;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .content .title {
+    font-size: 1.2rem;                /* slightly smaller on narrow screens */
+  }
 }
