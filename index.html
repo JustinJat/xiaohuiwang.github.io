@@ -6,9 +6,17 @@
     <title>Xiaohui Wang</title>
 
     <meta name="author" content="Xiaohui Wang">
+    <meta name="description" content="Xiaohui Wang, CS Ph.D. student at Purdue University working on database systems.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+      .news { max-height: 200px; overflow-y: auto; margin: 8px 0 0 0; padding-left: 0; list-style: none; }
+      .news li { display: flex; margin-bottom: 6px; }
+      .news .date { flex: 0 0 72px; font-weight: 700; }
+      .honors { margin: 0; padding-left: 18px; }
+      .honors li { margin-bottom: 6px; }
+    </style>
   </head>
 
   <body>
@@ -16,6 +24,8 @@
       <tbody>
         <tr style="padding:0px">
           <td style="padding:0px">
+
+            <!-- ============ Header / Bio ============ -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr style="padding:0px">
@@ -23,11 +33,16 @@
                     <p class="name" style="text-align: center;">
                       Xiaohui Wang
                     </p>
-                    <p>I am Xiaohui Wang (王潇晖 in Chinese), a senior undergraduate majoring in Computer Science and Technology at <a href="http://www.cs.zju.edu.cn/"> College of Computer Science And Technology, Zhejiang University</a>, privileged to be supervised by <a href="https://person.zju.edu.cn/en/0098112#0">Prof. Gang Chen</a> and <a href="https://person.zju.edu.cn/en/wusai">Prof. Sai Wu</a>. I am currently working on Query Optimization through Proxy on Database Management Systems, supervised by <a href="https://www.cs.cmu.edu/~pavlo/">Prof. Andy Pavlo </a>.
+                    <p>
+                      I am Xiaohui Wang (王潇晖), a first-year Ph.D. student in the <a href="https://www.cs.purdue.edu/">Department of Computer Science</a> at <a href="https://www.purdue.edu/">Purdue University</a>, advised by <a href="https://www.cs.purdue.edu/homes/csjgwang/">Prof. Jianguo Wang</a>. My research interests lie in database systems.
+                    </p>
+                    <p>
+                      Before Purdue, I received my B.Eng. in Computer Science from <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>. I was also a research intern in the <a href="https://db.cs.cmu.edu/">CMU Database Group</a> with <a href="https://www.cs.cmu.edu/~pavlo/">Prof. Andy Pavlo</a>.
+                    </p>
                     <p style="text-align:center">
-                      <a href="mailto:xiaohuiw849@gmail.com">Email</a> &nbsp;/&nbsp;
+                      <a href="mailto:wang7693@purdue.edu">Email</a> &nbsp;/&nbsp;
                       <a href="data/CV.pdf">CV</a> &nbsp;/&nbsp;
-                      <a href="https://github.com/JustinJat/">Github</a>;
+                      <a href="https://github.com/JustinJat/">GitHub</a>
                     </p>
                   </td>
                   <td style="padding:2.5%;width:40%;max-width:40%">
@@ -37,154 +52,190 @@
               </tbody>
             </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <!-- ============ News ============ -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I'm interested in Database Management Systems, specially Query Optimization and autonomous architecture. I'm passionate about building intelligent systems that can manage and optimize data efficiently with minimal human intervention.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>News</h2>
+                  <ul class="news">
+                    <li><span class="date">2026.08</span> Started my Ph.D. at Purdue CS, advised by Prof. Jianguo Wang.</li>
+                    <li><span class="date">2026.07</span> Graduated from Zhejiang University with a B.Eng. in Computer Science.</li>
+                    <li><span class="date">2025.09</span> Presented a poster at the CMU-DB Industry Affiliates Visit Day.</li>
+                    <li><span class="date">2025.06</span> Joined the CMU Database Group as a research intern with Prof. Andy Pavlo.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <img src='images/poster.png' width=100%>
-                </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">Work in progress: Autonomous Proxy-based LLM Query Tuning</span>
-                <br>
-                <strong>Xiaohui Wang</strong>, Wan Shen Lim, Will Zhang, Andy Pavlo
-                <br>
-                <em>Work in Progress</em>, 2025
-                <br>
-                <a href="PDF/IAP_poster_final.pdf">poster</a>
-                <p></p>
-                <p>
-                  We propose a novel autonomous proxy-based LLM query tuning framework, which leverages the proxy to tune the query in an autonomous and non-invasive manner.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
+            <!-- ============ Research ============ -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>Research</h2>
+                  <p>
+                    I work on database systems, with interests in vector search, data management for AI agents, and query optimization. I enjoy building systems that manage and optimize data efficiently with minimal human intervention.
+                  </p>
+                </td>
+              </tr>
+            </tbody></table>
 
+            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src="images/poster.png" width="100%" alt="IAP poster">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <span class="papertitle">Autonomous Proxy-based LLM Query Tuning</span>
+                  <br>
+                  <strong>Xiaohui Wang</strong>, Wan Shen Lim, Will Zhang, Andy Pavlo
+                  <br>
+                  <em>Poster, CMU-DB Industry Affiliates Visit Day</em>, 2025
+                  <br>
+                  <a href="PDF/IAP_poster_final.pdf">poster</a>
+                  <p></p>
+                  <p>
+                    An autonomous framework that uses an LLM agent inside a database proxy to tune queries non-invasively.
+                  </p>
+                </td>
+              </tr>
+            </tbody></table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  <tr>
-  <td style="padding:16px;width:100%;vertical-align:middle">
-    <h2>Education and Experience</h2>
-  </td>
-</tr>
-</tbody></table>
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  
-  
-    
-  <tr>
-    <td style="padding:16px;width:20%;vertical-align:middle">
-      <div class="one">
-        <img src='images/cmu.png' width=100%>
-      </div>
-    </td>
-    <td style="padding:8px;width:80%;vertical-align:middle">
-      <span class="papertitle"> <a href="https://www.cs.cmu.edu/~pavlo/"> Database Group</a>, <a href="https://www.cmu.edu/" >Carnegie Mellon University</a> [2025.6 - Present]</span>
-      <p>
-       Research Intern in CMU Database Group, <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, supervised by <a href="https://www.cs.cmu.edu/~pavlo/">Prof. Andy Pavlo</a>.
-      </p>
-      <p>
-        I've spent a memorable summer at CMU, learning about the latest advancements in database systems and autonomous databases and working with Prof. Andy Pavlo and my peers. I'm glad to continue my internship until the end of 2025.
-      </p>
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="padding:16px;width:20%;vertical-align:middle">
-      <div class="one">
-        <img src='images/logo.png' width=100%>
-      </div>
-    </td>
-    <td style="padding:8px;width:80%;vertical-align:middle">
-      <span class="papertitle"><a href="https://dilab-zju.github.io/" >Data Intelligence Laboratory</a> [2024.9 - 2025.1]</span>  
-      <p>
-        Research Intern in Data Intelligence Laboratory, <a href="https://www.zju.edu.cn/">Zhejiang University</a>, supervised by <a href="https://huanwang.tech/">Prof. Gang Chen</a> and <a href="https://person.zju.edu.cn/en/wusai">Prof. Sai Wu</a>.
-      </p>
-      <p>
-        <strong>Advisor</strong>: <a href="https://huanwang.tech/">Prof. Huan Wang</a>, <a href="https://person.zju.edu.cn/en/wusai">Prof. Sai Wu</a><br>
-      </p>
-      <p>
-        My time at Data Intelligence Lab has been truly rewarding, where I worked on entity matching and leveraged machine learning techniques to tackle challenging problems. 
-      </p>
-    </td>
-  </tr>
+            <!-- ============ Education & Experience ============ -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>Education and Experience</h2>
+                </td>
+              </tr>
+            </tbody></table>
+            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-  <tr>
-    <td style="padding:16px;width:20%;vertical-align:middle">
-      <div class="one">
-        <img src='images/Zhejiang_University_Logo.svg' width=100%>
-      </div>
-    </td>
-    <td style="padding:8px;width:80%;vertical-align:middle">
-      <span class="papertitle"><a href="https://www.zju.edu.cn/english/" >Zhejiang University</a> [2022.9 - Present]</span>  
-      <p>
-        Undergraduate student in Computer Science and Technology, expected to graduate in 2026.
-      </p>
-      <p>
-        I was admitted to Zhejiang University and have been pursuing my bachelor's degree in Computer Science and Technology since September 2022. I'm grateful for the opportunity to study at such a prestigious institution and to learn from some of the best professors in the field.
-      </p>
-    </td>
-  </tr>
-</tbody></table>
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src="images/purdue_seal.svg" width="100%" alt="Purdue University">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <span class="papertitle"><a href="https://www.cs.purdue.edu/">Department of Computer Science</a>, <a href="https://www.purdue.edu/">Purdue University</a> [2026.8 - Present]</span>
+                  <p>
+                    Ph.D. student in Computer Science, advised by <a href="https://www.cs.purdue.edu/homes/csjgwang/">Prof. Jianguo Wang</a>.
+                  </p>
+                </td>
+              </tr>
 
-  
-<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
-        <tr>
-          <td>
-            <h2>Miscellaneous</h2>
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src="images/cmu.png" width="100%" alt="CMU">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <span class="papertitle"><a href="https://db.cs.cmu.edu/">Database Group</a>, <a href="https://www.cmu.edu/">Carnegie Mellon University</a> [2025.6 - 2025.12]</span>
+                  <p>
+                    Research Intern, supervised by <a href="https://www.cs.cmu.edu/~pavlo/">Prof. Andy Pavlo</a>.
+                  </p>
+                  <p>
+                    Worked on proxy-based LLM query tuning. I spent a memorable summer and fall at CMU learning about the latest work in autonomous databases alongside Andy and my peers.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src="images/logo.png" width="100%" alt="ZJU DILab">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <span class="papertitle"><a href="https://dilab-zju.github.io/">Data Intelligence and Database Laboratory</a>, Zhejiang University [2024.11 - 2025.1]</span>
+                  <p>
+                    Research Intern, supervised by <a href="https://person.zju.edu.cn/en/0098112">Prof. Gang Chen</a> and <a href="https://person.zju.edu.cn/en/wusai">Prof. Sai Wu</a>.
+                  </p>
+                  <p>
+                    Worked on entity matching with domain adaptation.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src="images/Zhejiang_University_Logo.svg" width="100%" alt="Zhejiang University">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <span class="papertitle"><a href="https://www.zju.edu.cn/english/">Zhejiang University</a> [2022.9 - 2026.7]</span>
+                  <p>
+                    B.Eng. in Computer Science and Technology, <a href="http://www.cs.zju.edu.cn/">College of Computer Science and Technology</a>.
+                  </p>
+                  <p>
+                    GPA 90.40/100 (top 15%).
+                  </p>
+                </td>
+              </tr>
+            </tbody></table>
+
+            <!-- ============ Honors ============ -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>Honors and Awards</h2>
+                  <ul class="honors">
+                    <li>Second Place (Team Leader), Alibaba Kolors-LoRA Tournament, 2024: text-to-video generation with ExVideo, Stable Video Diffusion and Kolors-style LoRA</li>
+                    <li>Third-Class Scholarship, Zhejiang University (top 15%), 2024</li>
+                    <li>First-Class Scholarship, Zhejiang University (top 3%), 2023</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody></table>
+
+            <!-- ============ Miscellaneous ============ -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>Miscellaneous</h2>
+                </td>
+              </tr>
+            </tbody></table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="colored-box" style="background-color: #aaba9e;">
+                    <h2>Hobbies</h2>
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <p>
+                    <strong>Love Music!</strong> I play the piano and trumpet. I enjoy a wide range of genres, including R&amp;B, hip-hop, soul and alternative pop. My favorite artists include Khalil Fong, The Weeknd, Gallant and Jay Chou.
+                    I also love live concerts and music festivals whenever possible. Feel free to share your favorite music with me!
+                  </p>
+                  <p>
+                    <strong>Love Sports!</strong> I play table tennis at a fairly competitive level. I'm a soccer fan and basketball lover: I support Messi, FC Barcelona, Dortmund, Kawhi Leonard and the LA Clippers.
+                    I enjoy almost every sport, from tennis (a huge Federer admirer: elegance and grace...) to anything that gets people moving. You can always count me in for any game or activity!
+                  </p>
+                </td>
+              </tr>
+            </tbody></table>
+
+            <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=sdDgZEPl6xVHgm6l32OGMbEnRdu1_2xR3HFdbCkMX_0&cl=ffffff&w=a"></script>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:center; font-style:italic; margin-top: 20px;">
+                    Last updated: September 2026. Thanks to <a href="https://jonbarron.info/">Jon Barron</a> for sharing his website's source code.
+                  </p>
+                </td>
+              </tr>
+            </tbody></table>
+
           </td>
         </tr>
-      </tbody></table>
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #aaba9e;">
-								 <h2>Hobbies</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <p>
-                  <strong>Love Music!</strong> I play the piano and trumpet. I enjoy listening to a wide range of music genres, including R&B, hiphop, soul and alternative pop. My favorite artists include Khalid Fong, The weeknd, Gallant and Jay Chou. 
-                  I also love to attend live concerts and music festivals whenever possible. Feel free to share your favorite music with me!
-                </p>
-                <p>
-                  <strong>Love Sports!</strong> I have reached a fairly competitive level in table tennis. I'm soccer fan and baseketball lover - I support Messi, FC Barcelona, Dortmund and Kawhi Leonard and the LA Clippers.
-                  I enjoy almost every sport, from tennis (I'm a huge Federer admirer, elegance and grace...) to anything that gets people moving — you can always count me in for any game or activity!
-                </p>
-              </td>
-            </tr>
-
-          
-            
-          </tbody></table>
-          
-          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=sdDgZEPl6xVHgm6l32OGMbEnRdu1_2xR3HFdbCkMX_0&cl=ffffff&w=a"></script>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center; font-style:italic; margin-top: 20px;">
-                  Thank <a herf = "https://jonbarron.info/">Jon Barron</a> for sharing his website's source code.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-        </td>
-      </tr>
+      </tbody>
     </table>
   </body>
 </html>
